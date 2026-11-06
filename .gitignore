@@ -1,0 +1,23 @@
+# Secrets and keys
+*.key
+*.pem
+*.env
+secrets/
+id_rsa*
+
+# Raw logs and packet captures (contain IPs and private network data)
+*.log
+eve.json
+*.pcap
+*.pcapng
+
+# Honeypot data: never publish attacker-downloaded files or raw session logs
+cowrie/var/
+downloads/
+dl/
+tty/
+*.json.gz
+
+# OS clutter
+.DS_Store
+Thumbs.db
