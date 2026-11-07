@@ -16,7 +16,7 @@ Internet attackers → Cowrie honeypot (isolated) → Suricata IDS → Logs / da
 - Document every step
 
 ## Project phases
-- [ ] Phase 0: Plan and baseline
+- [x] Phase 0: Plan and baseline
 - [ ] Phase 1: Harden the Pi and install Suricata
 - [ ] Phase 2: Deploy Cowrie honeypot (Docker, isolated)
 - [ ] Phase 3: Logging and dashboard
