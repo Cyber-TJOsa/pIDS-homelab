@@ -1,0 +1,9 @@
+# pIDS-homelab custom Suricata rules
+#
+# sid 9000001 - Lab test rule (first custom detection)
+# Purpose:  Verify Suricata is capturing traffic and loading custom rules.
+# Detects:  HTTP requests whose User-Agent contains "pids-test".
+# Trigger:  curl -s -A "pids-test" http://example.com > /dev/null
+# Tested:   2026-11-11 - alert fired in fast.log as expected.
+# Note:     sids 9000000+ are reserved for local/custom rules.
+alert http any any -> any any (msg:"PIDS LAB - test user agent"; http.user_agent; content:"pids-test"; sid:9000001; rev:1;)
